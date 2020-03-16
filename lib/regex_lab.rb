@@ -25,5 +25,8 @@ first_letter = text.scan(/\w+/)[0]
 end
 
 def valid_phone_number?(phone)
-if phone.match(/([0-9] ?){3}
+if number_breakdown = numbers.scan(/(\d+)-(\d+)-(\d+)/)
+  return true 
+else 
+  return false
 end
