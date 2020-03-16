@@ -26,7 +26,7 @@ end
 
 def valid_phone_number?(phone)
 if number_breakdown = numbers.scan(/(\d+)-(\d+)-(\d+)/)
-  return true 
+  true 
 else 
-  return false
+  false
 end
